@@ -685,23 +685,23 @@ footer .logo span {
   vertical-align: middle;
 }
 
-.check-icon-span {
+.check-icon-wrap {
   left: 24px;
   width: 16px;
   height: 16px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
   fill: transparent;
   margin-right: 8px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.check:checked + .modal-label-ppolicy .check-icon-span {
+.check:checked + .modal-label-ppolicy .check-icon-wrap {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
