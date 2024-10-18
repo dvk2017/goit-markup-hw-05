@@ -511,11 +511,11 @@
             </li>
           </ul>
         </div>
-        <form class="subscribe">
+        <div class="subscribe">
           <label class="subscribe-label social-title" for="subscribe-email">
             Subscribe
           </label>
-          <div class="subscribe-wrap">
+          <form class="subscribe-wrap">
             <input
               class="subscribe-input"
               type="email"
@@ -530,12 +530,12 @@
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-close" type="button">
           <svg class="close-icon" width="8" height="8">
@@ -546,59 +546,64 @@
           Leave your contacts and we will call you back
         </p>
         <form class="modal-form">
-          <label class="modal-label">
-            Name
-            <span class="modal-input-wrap">
+          <div class="label-input-wrap">
+            <label class="modal-label" for="user-name"> Name </label>
+            <div class="modal-input-wrap">
               <input
                 class="modal-input"
                 type="text"
                 name="user-name"
+                id="user-name"
                 autofocus
                 required
               />
               <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
-            </span>
-          </label>
-          <label class="modal-label">
-            Phone
-            <span class="modal-input-wrap">
+            </div>
+          </div>
+          <div class="label-input-wrap">
+            <label class="modal-label" for="user-phone"> Phone </label>
+            <div class="modal-input-wrap">
               <input
                 class="modal-input"
                 type="tel"
                 name="user-phone"
+                id="user-phone"
                 required
               />
               <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
-            </span>
-          </label>
-          <label class="modal-label">
-            Email
-            <span class="modal-input-wrap">
+            </div>
+          </div>
+          <div class="label-input-wrap">
+            <label class="modal-label" for="user-email"> Email </label>
+            <div class="modal-input-wrap">
               <input
                 class="modal-input"
                 type="email"
                 name="user-email"
+                id="user-email"
                 required
               />
               <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
-            </span>
-          </label>
-          <label class="modal-label modal-label-comment">
-            Comment
+            </div>
+          </div>
+          <div class="label-input-wrap">
+            <label class="modal-label modal-label-comment" for="user-comment">
+              Comment
+            </label>
             <textarea
               class="modal-input modal-comment"
               name="user-comment"
+              id="user-comment"
               rows="7"
-              id=""
               placeholder="Text input"
             ></textarea>
-          </label>
+          </div>
           <input
             class="check visually-hidden"
             type="checkbox"
