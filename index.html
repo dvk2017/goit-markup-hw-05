@@ -602,21 +602,24 @@
               placeholder="Text input"
             ></textarea>
           </div>
-          <input
-            class="check visually-hidden"
-            type="checkbox"
-            name="accept_PP"
-            id="check"
-            required
-          />
-          <label class="modal-label modal-label-ppolicy" for="check">
-            <span>
-              <svg class="check-icon" width="10" height="8">
-                <use href="./images/icons.svg#icon-check"></use>
-              </svg> </span
-            >I accept the terms and conditions of the
-            <a class="ppolicy" href="">Privacy Policy</a>
-          </label>
+          <div class="modal-ppolicy-wrap">
+            <input
+              class="check visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+              required
+            />
+            <label class="modal-label modal-label-ppolicy" for="user-privacy">
+              <span>
+                <svg class="check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg> </span
+              >I accept the terms and conditions of the
+              <a class="ppolicy" href="">Privacy Policy</a>
+            </label>
+          </div>
           <button class="btn" type="submit">Send</button>
         </form>
       </div>
