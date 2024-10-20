@@ -614,7 +614,7 @@ footer .logo span {
 }
 
 .modal-label {
-  display: inline-flex;
+  display: block;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -676,13 +676,13 @@ footer .logo span {
 }
 
 .modal-label-ppolicy {
-  display: inline-flex;
-  align-items: center;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
 }
 
 .check {
-  margin-right: 8px;
-  vertical-align: middle;
 }
 
 .check-icon-wrap {
@@ -707,12 +707,11 @@ footer .logo span {
   fill: #f4f4fd;
 }
 
-.modal-label .ppolicy {
+.ppolicy {
   line-height: 1.33333;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
-  margin-left: 4px;
 }
 
 .modal-form .btn {
