@@ -614,7 +614,7 @@ footer .logo span {
 }
 
 .modal-label {
-  display: block;
+  display: inline-flex;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
